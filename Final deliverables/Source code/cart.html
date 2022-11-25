@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>All Products - Shopper</title>
+        <link rel="stylesheet" href="shoping.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.png" width="125px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" width="30px" height="30px">
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+               
+            </div>    
+            <!---------------------------------->
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>SubTotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/buy-1.jpg">
+                                <div>
+                                    <p>Red Printed T-shirt</p>
+                                    <small>Price:$50.00</small><br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50.00</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/product-7.jpeg">
+                                <div>
+                                    <p>Casual Kurti set</p>
+                                    <small>Price:$150.00</small><br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50.00</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/product-5.jpeg">
+                                <div>
+                                    <p>Beaded Sandals</p>
+                                    <small>Price:$30.00</small><br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50.00</td>
+
+                    </tr>
+                </table>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>SubTotal</td>
+                            <td>$150.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$170.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    
+       
+
+        <!----------------footer------------>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" >
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png">
+                        <p>Our Purpose is to make everyone fashionable</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>BLogs</li>
+                            <li>Return Policy</li>
+                            <li>Join Affliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!------------->
+        <script>
+            var MenuItems=documnet.getElementsById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px"){
+                    MenuItems.style.maxHeight="200px"
+                
+                }
+                else{
+                    MenuItems.style.maxHeight="0px"
+                }
+            }
+        </script>
+        <!------------------->
+       
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
